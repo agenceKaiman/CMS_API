@@ -24,6 +24,9 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 corsOptions.credentials = true;
 app.use(cors(corsOptions));
 
+app.use('/resources', express.static(path.join(__dirname, 'public')));
+app.set('views', `views`);
+app.set('view engine', 'hbs');
 
 
 const mongoUri = 'mongodb+srv://yoannchelin:Carambar1703@clusterdashboard.vpng9yi.mongodb.net/?retryWrites=true&w=majority';
