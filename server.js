@@ -26,8 +26,7 @@ app.use(cors(corsOptions));
 
 //HTML and Static file
 app.use('/resources', express.static(path.join(__dirname, 'public')));
-app.set('views', `views`);
-app.set('view engine', 'hbs');
+
 
 const mongoUri = 'mongodb+srv://yoannchelin:Carambar1703@clusterdashboard.vpng9yi.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(
