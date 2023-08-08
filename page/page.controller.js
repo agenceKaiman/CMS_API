@@ -1,4 +1,4 @@
-import { data } from 'jquery';
+
 import {
   createPage,
   deletePage,
